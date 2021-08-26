@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Application</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="features">
+        <img class="features-img" src="log.jpg" alt="logo"> 
+        <h1 class="features-title">Добрый день!</h1>
+        <div class="features-flex">
+            <p>Уже есть аккаунт?</p>
+            <a class="features-flex__link" href="#">Войти</a>
+        </div>
+
+        <form action="#">
+            <div class="features-form">
+                <div class="features-form__flex">
+                    <label for="firstname">Введите Имя</label>
+                    <input id="firstname" type="text" placeholder="Иван" class="phone_mask" >
+                </div>
+                <div class="features-form__flex">
+                    <label for="lastname">Введите Фамилию</label>
+                    <input id="lastname" type="text" placeholder="Иванов" class="phone_mask">
+                </div>
+            </div>
+            <label for="birthdate">Дата Рождения</label>
+            <input type="date">
+                 
+                     <label for="Gender">
+                         Пол
+                         <div class="features-form__gender">
+                         <input type="radio" class="features-form__radio" name ="gender">
+                         <label for="male">Мужской</label>
+                         <input type="radio" class="features-form__radio" name ="gender">
+                         <label for="female">Женский</label>
+                        </div>
+                     </label> 
+                 
+            <label for="Skype">Номер телефона</label>
+            <input id="Skype" type="text" placeholder="Телефон" class="input phone_mask"> 
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+            <script src="jquery.maskedinput.min.js"></script>
+            <script>
+                $(".phone_mask").mask("+7(999)999-99-99");
+            </script>
+
+            <label for="Promo"> Ник Telegram</label>
+            <input class="input" id="Promo" type="text" placeholder="@ivanov" class="phone_mask">
+            <button>Продолжить</button>
+        </form>
+    </section>
+</body>
+</html>
