@@ -1,1 +1,1 @@
-https://agliullinadi.github.io/sixth/index
+https://agliullinadi.github.io/authorization/index
